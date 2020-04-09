@@ -1,7 +1,3 @@
-# knock-knock joke 
+# knock-knock  
 
-* Group member: Vincent, Alice, Patricia
-
-Require
-
-* npm install
+* Group members: Vincent, Alice, Patricia
