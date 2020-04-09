@@ -29,3 +29,4 @@ function formatJoke(joke) {
   ].join('\n')
 }
 
+export default formatJoke;
