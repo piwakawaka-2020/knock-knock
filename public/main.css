@@ -1,0 +1,16 @@
+/* DOOR SCREEN */
+
+.door{
+  margin: auto;
+  text-align: center;
+}
+
+.door img{
+  width: 30%;
+  cursor: url('./images/knock.png'), auto;
+}
+
+.door h3{
+  z-index: 1;
+  color: black;
+}
