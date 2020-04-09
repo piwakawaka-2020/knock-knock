@@ -11,8 +11,13 @@ const jokes = [
     {name: 'Olive', answer: 'you!'},
     {name: 'Abby', answer: 'birthday to you!'},
     {name: 'Rufus', answer: 'the most important part of your house.'},
-    {name: 'Cheese', answer: 'a cute girl.'}
+    {name: 'Cheese', answer: 'a cute girl.'},
+    {name: 'Candice', answer: 'door open, or am I stuck out here?'},
+    {name: 'Voodoo', answer: 'you think you are, asking all these questions?'},
+    {name: 'Mikey', answer: "isn't working, can you let me in?"},
+    {name: 'Needle', answer: 'little help getting in the door!'},
+    {name: 'Leaf', answer: 'me alone!'},
+    {name: 'Nun', answer: 'of your business!'}
   ]
 
-  
   export default jokes
