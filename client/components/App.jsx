@@ -1,5 +1,11 @@
 import React from 'react'
+import Form from './Form'
 
-
-
-export default App;
+const App = () => {
+  return (
+    <>
+      <Form />
+    </>
+  )
+}
+export default App
