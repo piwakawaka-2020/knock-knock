@@ -1,13 +1,17 @@
 import React from 'react'
 import Form from './Form'
+import Door from './Action'
 import {HashRouter as Router, Route, Link} from 'react-router-dom'
+
+import Form from './Form'
+import Punch from './Punch'
 
 const App = () => {
   return (
     <>
       <Router>
-        <Route exact path="/">
-          <Home></Home>
+        <Route path="/">
+          <Door></Door>
           {/* Click the door, the door link to /joke route - form display*/}
           {/* WHO'S THERE */}
         </Route>
