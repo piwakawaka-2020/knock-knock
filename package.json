@@ -1,0 +1,49 @@
+{
+  "name": "group3",
+  "version": "1.0.0",
+  "description": "Knock knock Joke",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server & webpack --watch"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-proposal-object-rest-spread"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piwakawaka-2020/knock-knock.git"
+  },
+  "author": "Vincent, Patricia, Alice",
+  "license": "ISC",
+  "homepage": "https://github.com/piwakawaka-2020/knock-knock#readme",
+  "bugs": {
+    "url": "https://github.com/piwakawaka-2020/knock-knock/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "jest": "^25.2.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "knock-knock-jokes": "^1.7.0"
+  }
+}
