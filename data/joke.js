@@ -29,3 +29,5 @@ function formatJoke(joke) {
     joke.name + ' ' + joke.answer
   ].join('\n')
 }
+
+export default formatJoke;
