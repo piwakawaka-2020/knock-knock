@@ -43,6 +43,7 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
+    "animate.css": "^3.7.2",
     "express": "^4.17.1",
     "knock-knock-jokes": "^1.7.0"
   }
