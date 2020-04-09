@@ -12,6 +12,7 @@ class Form extends React.Component {
                 <form>
                     <label>
                         <select>
+                            <option value="">---Choose One ---</option>
                             {names.map ((name) => {
                                 return <option value="{name}">{name}</option>
                             })}
