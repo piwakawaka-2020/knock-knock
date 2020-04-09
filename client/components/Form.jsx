@@ -36,7 +36,7 @@ class Form extends React.Component {
         })
         return (
             <div>
-                <h1>WHO'S THERE??</h1>
+                {/* <h1>WHO'S THERE??</h1> */}
                 <form onSubmit = {this.handleSubmit}>
                     <label>
                         <select name="who" onChange={this.handleChange}>
