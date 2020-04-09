@@ -14,7 +14,6 @@ const jokes = [
   {name: 'Cheese', answer: 'a cute girl.'}
 ]
 
-
 module.exports = function () {
     const joke = jokes[Math.floor(Math.random()*jokes.length)]
     return formatJoke(joke)
@@ -29,3 +28,4 @@ function formatJoke(joke) {
     joke.name + ' ' + joke.answer
   ].join('\n')
 }
+
