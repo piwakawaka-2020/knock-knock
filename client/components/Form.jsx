@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import jokesData from '../../data/jokes'
 
@@ -53,9 +54,12 @@ class Form extends React.Component {
                         {this.state.who}
                     </p>
                     <input type="submit" value="Who??" />
+
                 </form>
 
-                <h1>{this.state.joke}</h1>
+                {/* <Link to={'/select/' + this.state.who}>{this.state.who}</Link> */}
+
+                {/* <h1>{this.state.joke}</h1> */}
             </div>
         )
     }
