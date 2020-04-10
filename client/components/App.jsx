@@ -3,6 +3,9 @@ import Form from './Form'
 import Door from './Action'
 import {HashRouter as Router, Route, Link} from 'react-router-dom'
 
+import Form from './Form'
+import Punch from './Punch'
+
 const App = () => {
   return (
     <>
