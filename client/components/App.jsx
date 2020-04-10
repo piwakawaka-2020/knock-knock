@@ -1,7 +1,7 @@
 import React from 'react'
 import Form from './Form'
 import Door from './Action'
-import {HashRouter as Router, Route, Link} from 'react-router-dom'
+import {HashRouter as Router, Route} from 'react-router-dom'
 
 const App = () => {
   return (
@@ -11,10 +11,10 @@ const App = () => {
           <Door></Door>
         </Route>
         <Route path="/joke">
-          <Form/>
+          <Form></Form>
         </Route>
       </Router>
-    </>
+    </> 
   )
-}
+} 
 export default App

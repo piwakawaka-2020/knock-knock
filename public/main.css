@@ -1,5 +1,18 @@
 /* DOOR SCREEN */
 
+html{
+  background-color: white;
+}
+
+body{
+  width: 80%;
+}
+
+#app{
+  display: flex;
+  flex-direction: row;
+}
+
 .door{
   margin: auto;
   text-align: center;
@@ -13,4 +26,42 @@
 .door h3{
   z-index: 1;
   color: black;
+}
+
+/* JOKE FORM */
+.jokeForm{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 50%;
+  border: 1px solid black;
+  font-family: 'Acme', sans-serif;
+  background-color: sandybrown;
+  display: inline-block;
+  padding: 10px;
+  border-radius:20px;
+}
+
+.jokeForm form{
+  text-align: center;
+  font-family: 'Acme', sans-serif;
+
+}
+
+.jokeDrop select{
+  text-align: center;
+  font-family: 'Acme', sans-serif;
+  
+
+}
+
+h2 {
+  font-family: 'Acme', sans-serif;
+  text-align: center;
+  color: saddlebrown;
+
+}
+
+.submit {
+  font-family: 'Acme', sans-serif;
 }

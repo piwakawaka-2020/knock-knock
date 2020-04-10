@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 import jokesData from '../../data/jokes'
 
@@ -15,12 +14,10 @@ class Form extends React.Component {
         let punchLine = jokesData.find((joke) => {
             return joke.name === this.state.who
         })
-
         const newState = {
             who: this.state.who,
             joke: punchLine.answer,
         }
-
         this.setState(newState)
         
       }
@@ -36,24 +33,22 @@ class Form extends React.Component {
             return joke.name
         })
         return (
-            <div>
+            <div className="jokeForm animated bounceInLeft">
                 <form onSubmit = {this.handleSubmit}>
                     <label>
-                        <select name="who" onChange={this.handleChange}>
+                        <select className="jokeDrop" name="who" onChange={this.handleChange}>
                             <option value="">---Choose One ---</option>
-                            {names.map ((name) => {
-                                return <option value={name}>{name}</option>
+                            {names.map ((name ,i) => {
+                                return <option key={i} value={name}>{name}</option>
                             })}
                         </select>
                     </label>
-
-                    <br/>
-                    <br/>
-                    <p>
+                    <h2>
                         {this.state.who}
-                    </p>
-                    <input type="submit" value="Who??" />
+                    </h2>
+                    <input className="submit" type="submit" value="Who??"/>
                 </form>
+                <h2>{this.state.joke}</h2>
             </div>
         )
     }

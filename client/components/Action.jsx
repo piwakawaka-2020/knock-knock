@@ -7,14 +7,23 @@ class Door extends React.Component{
     super()
     this.state = {
       image: "/images/door.png",
+      pathName: "Knock me"
     }
   }
 
   knock = () =>{
     this.setState({
-      knock: "Knock-knock",
+      knock: "Knock-knock!",
       who: "Who's there?",
-      path: "/joke"
+      path: "/joke",
+      pathName: "What'sup?"
+    })
+  }
+
+  mat = () =>{
+    this.setState( {
+      images: "/images/mat2.png",
+      text: ["Shut The Front Door", "Friends Welcome Relatives by Appointment", "Hi I'm Mat", "Come Back With A Warrant", "Leave food - Now go home", "The Neighbors have better stuff", "Shut the Front Door", "Nacho House", "We have found Jesus", "Oh Shit Not You Again", "Wizards Welcome Muggles not Tolerated", "Shoes off Biaches", "You again?", "Enter with Champange"]
     })
   }
   
@@ -22,11 +31,17 @@ class Door extends React.Component{
       return(
         <>
           <div className="door">
-            <img onClick={this.knock} src={this.state.image} alt="Door"/>
             <div>
               <h1>{this.state.knock}</h1>
               <h2>{this.state.who}</h2>
-              <button><Link to={this.state.path}>Knock Me</Link></button>
+              <Link to={this.state.path}>{this.state.pathName}</Link>
+            </div>
+            <div className="animated bounceIn slow">
+              <Link to={this.state.path}><img onClick={this.knock} src={this.state.image} alt="Door"/></Link>
+              <div className="mat" onMouseEnter={this.mat}>
+                <img src = {this.state.images}></img>
+                <p>{this.state.text}</p>
+              </div>
             </div>
           </div>
         </>
