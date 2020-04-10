@@ -37,7 +37,6 @@ class Form extends React.Component {
         })
         return (
             <div>
-                {/* <h1>WHO'S THERE??</h1> */}
                 <form onSubmit = {this.handleSubmit}>
                     <label>
                         <select name="who" onChange={this.handleChange}>
@@ -54,12 +53,7 @@ class Form extends React.Component {
                         {this.state.who}
                     </p>
                     <input type="submit" value="Who??" />
-
                 </form>
-
-                {/* <Link to={'/select/' + this.state.who}>{this.state.who}</Link> */}
-
-                {/* <h1>{this.state.joke}</h1> */}
             </div>
         )
     }
