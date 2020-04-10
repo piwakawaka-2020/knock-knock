@@ -36,6 +36,7 @@ class Form extends React.Component {
             <div className="jokeForm animated bounceInLeft">
                 <form onSubmit = {this.handleSubmit}>
                     <label>
+                        <p>Choose a name</p>
                         <select className="jokeDrop" name="who" onChange={this.handleChange}>
                             <option value="">---Choose One ---</option>
                             {names.map ((name ,i) => {
@@ -46,7 +47,7 @@ class Form extends React.Component {
                     <h2>
                         {this.state.who}
                     </h2>
-                    <input className="submit" type="submit" value="Who??"/>
+                    <input className="submit animated pulse infinite" type="submit" value="Who??"/>
                 </form>
                 <h2>{this.state.joke}</h2>
             </div>
