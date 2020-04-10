@@ -13,7 +13,7 @@ class Door extends React.Component{
 
   knock = () =>{
     this.setState({
-      knock: "Knock-knock!",
+      knock: "KNOCK-KNOCK!",
       who: "Who's there?",
       path: "/joke",
       pathName: "What'sup?"
@@ -32,7 +32,7 @@ class Door extends React.Component{
         <>
           <div className="door">
             <div>
-              <h1>{this.state.knock}</h1>
+              <h1 className="animated pulse slow infinite">{this.state.knock}</h1>
               <h2>{this.state.who}</h2>
               <Link to={this.state.path}>{this.state.pathName}</Link>
             </div>
